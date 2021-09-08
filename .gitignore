@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+build
+Debug
+.vs
+*.json
