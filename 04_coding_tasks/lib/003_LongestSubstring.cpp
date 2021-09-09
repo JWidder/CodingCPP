@@ -7,6 +7,7 @@
 #include "LibSolution.h"
 
 using namespace std;
+#define ANZ_CHAR 256
 
 /*
 Given a string s, find the length of the longest substring without repeating characters.
@@ -17,22 +18,29 @@ Task:
 Solution:
 	https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
 	https://www.baeldung.com/java-longest-substring-without-repeated-characters
-*/
-namespace leetcode {
-	int lengthOfLongestSubstring(string s) {
-		char old;
-		int count = 1;
 
-		old = s[0];
-		for (auto& ch : s) {
-			if (old == ch) {
-				count = 1;
-			}
-			else {
-				count++;
-			}
-			old = ch;
+ Solution concept
+
+  Ermittle die Länge des Fensters ungleicher Buchstaben. Dieses wird begrenzt 
+  druch den linken und rechten Rand. 
+
+  rechte Rand:Aktueller Wert des Zählers über den String. (Counter) 
+  linke Rand: Wird immer dann geprüft, wenn ein Character mehrfach vorkommt. 
+              Ist das erste Vorkommen des Zeichens weiter rechts als der 
+			  aktuelle linke Rand, dann wir dieser entsprechend angepasst. 
+ */
+namespace leetcode {
+	int lengthOfLongestSubstring(string str) {
+		vector<int> lastOccurence(ANZ_CHAR, -1);
+		
+		int max_len = 0;
+		int left_pos = -1;
+		for (int count = 0; count < str.length(); count++) {
+			left_pos = std::max(left_pos,lastOccurence[str[count]]);
+			max_len = std::max(max_len,count - left_pos);
+
+			lastOccurence[str[count]] = count;
 		}
-		return count;
+        return max_len;
 	}
 }
