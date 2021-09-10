@@ -12,7 +12,10 @@ Task:
 
 Solution:
 
-	https://en.wikipedia.org/wiki/Longest_palindromic_substring#Manacher.27s_algorithm
+	Explanation of Manachers algorithm.
+
+	https://en.wikipedia.org/wiki/Longest_palindromic_substring#Manacher.27s_algorithm (Overview)
+	https://cp-algorithms.com/string/manacher.html (Detailed exlanation)
 */
 namespace leetcode {
     string find_LongestPalindrome(string s) {
