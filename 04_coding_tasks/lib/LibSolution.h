@@ -18,4 +18,8 @@ namespace leetcode {
 	int lengthOfLongestSubstring(std::string s);
 
 	double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2);
+
+	std::string find_LongestPalindrome(std::string s);
+
+	std::string find_xxx_yyy(std::string s);
 }
