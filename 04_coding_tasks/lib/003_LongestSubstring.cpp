@@ -7,6 +7,7 @@
 #include "LibSolution.h"
 
 using namespace std;
+
 #define ANZ_CHAR 256
 
 /*
@@ -19,13 +20,13 @@ Solution:
 	https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
 	https://www.baeldung.com/java-longest-substring-without-repeated-characters
 
- Solution concept
+Solution concept
 
-  Ermittle die Länge des Fensters ungleicher Buchstaben. Dieses wird begrenzt 
+  Ermittle die Lï¿½nge des Fensters ungleicher Buchstaben. Dieses wird begrenzt 
   druch den linken und rechten Rand. 
 
-  rechte Rand:Aktueller Wert des Zählers über den String. (Counter) 
-  linke Rand: Wird immer dann geprüft, wenn ein Character mehrfach vorkommt. 
+  rechte Rand:Aktueller Wert des Zï¿½hlers ï¿½ber den String. (Counter) 
+  linke Rand: Wird immer dann geprï¿½ft, wenn ein Character mehrfach vorkommt. 
               Ist das erste Vorkommen des Zeichens weiter rechts als der 
 			  aktuelle linke Rand, dann wir dieser entsprechend angepasst. 
  */
@@ -41,6 +42,6 @@ namespace leetcode {
 
 			lastOccurence[str[count]] = count;
 		}
-        return max_len;
+    return max_len;
 	}
 }

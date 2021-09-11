@@ -39,4 +39,5 @@ TEST(Test_003_Longest_Substring, Test_with_empty_string) {
 
 	int result = lengthOfLongestSubstring("");
 	EXPECT_EQ(result, 0);
+
 }
