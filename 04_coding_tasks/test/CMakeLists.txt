@@ -1,6 +1,6 @@
 file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
 
-add_executable(${CMAKE_PROJECT_NAME}_tst ${TEST_SOURCES})
+add_executable(${CMAKE_PROJECT_NAME}_tst ${TEST_SOURCES} "test_006_ZigZag_Conversion.cpp")
 
 add_test(NAME ${TEST_BINARY} COMMAND ${TEST_BINARY})
 

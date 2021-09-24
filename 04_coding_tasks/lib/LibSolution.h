@@ -18,4 +18,6 @@ namespace leetcode {
 	int lengthOfLongestSubstring(std::string s);
 
 	double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2);
+
+	std::string convert_zigzag(std::string s, int numRows);
 }
