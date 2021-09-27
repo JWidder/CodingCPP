@@ -4,7 +4,7 @@
 #include <string>
 
 namespace leetcode {
-	std::vector<int> twoSum(std::vector<int>& nums, int target);
+	/* 1 */ std::vector<int> twoSum(std::vector<int>& nums, int target);
 
 	struct ListNode {
 		int val;
@@ -13,24 +13,26 @@ namespace leetcode {
 		ListNode(int x) : val(x), next(nullptr) {}
 		ListNode(int x, ListNode* next) : val(x), next(next) {}
 	};
-	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
+	/* 2 */ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
 
-	int lengthOfLongestSubstring(std::string s);
-	double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2);
-	std::string find_LongestPalindrome(std::string s);
-	int find_containerWithMostWater(int a[],int len);
-	std::string integerToRoman(std::string s);
-	std::string romanToInteger(std::string s);
-	std::string longestCommonPrefix(std::string s);
-	std::string threeSum(std::string s);
-	std::string threeSumClosest(std::string s);
-	std::string letterCombinationsOfAPhoneNumber(std::string s);
-	std::string fourSum(std::string s);
-	std::string removeNthNodeFromEndOfList(std::string s);
-	std::string validParentheses(std::string s);
-	std::string find_mergeTwoSortedLists(std::string s);
+	/* 3 */ int lengthOfLongestSubstring(std::string s);
+	/* 4 */ double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2);
+
+	/* 6 */ std::string convert_zigzag(std::string s, int numRows);
+
+	/* 9 */ std::string find_LongestPalindrome(std::string s);
+
+	/* 11 */ int find_containerWithMostWater(int a[], int len);
+	/* 12 */ std::string integerToRoman(std::string s);
+	/* 13 */ std::string romanToInteger(std::string s);
+	/* 14 */ std::string longestCommonPrefix(std::string s);
+	/* 15 */ std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
+	/* 16 */ std::string threeSumClosest(std::string s);
+	/* 17 */ std::string letterCombinationsOfAPhoneNumber(std::string s);
+	/* 18 */ std::string fourSum(std::string s);
+	/* 19 */ std::string removeNthNodeFromEndOfList(std::string s);
+	/* 20 */ std::string validParentheses(std::string s);
+	/* 21 */ std::string find_mergeTwoSortedLists(std::string s);
 
 	std::string find_xxx_yyy(std::string s);
-
-	std::string convert_zigzag(std::string s, int numRows);
 }

@@ -1,3 +1,4 @@
+#include "LibSolution.h"
 #include <string>
 
 #include "LibSolution.h"

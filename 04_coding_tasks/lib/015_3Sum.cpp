@@ -17,7 +17,8 @@ Solution:
 
 */
 namespace leetcode {
-    string threeSum(string s) {
-		return(s);
-    }
+	std::vector<vector<int>> threeSum(std::vector<int>& nums)
+	{
+		return std::vector<vector<int>>();
+	}
 }
