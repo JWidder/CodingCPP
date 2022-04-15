@@ -2,8 +2,10 @@
 
 #include "gmock/gmock.h"
 
+#include "Generator.h"
 #include "Scene.h"
 // #include "SceneElement.h"
+
 
 class MockSphere3D : public Sphere3D {
 public:

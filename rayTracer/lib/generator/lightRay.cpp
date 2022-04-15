@@ -1,6 +1,6 @@
-#include "lightRay.h"
+// #include "lightRay.h"
 
-
+#include "Generator.h"
 
 
 LightRay::LightRay()

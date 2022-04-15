@@ -9,15 +9,15 @@
 
 namespace testing {
 	TEST(test_Scene, TEST_MOCK) {
-		//using ::testing::NiceMock;
-
-		::testing::NiceMock<MockSceneElement> testMockSceneElement1;
-		::testing::NiceMock<MockSceneElement> testMockSceneElement2;
-		::testing::NiceMock<MockSceneElement> testMockSceneElement3;
-		::testing::NiceMock<MockSceneElement> testMockSceneElement4;
-		::testing::NiceMock<MockSceneElement> testMockSceneElement5;
-		::testing::NiceMock<MockSceneElement> testMockSceneElement6;
-		::testing::NiceMock<MockSceneElement> testMockSceneElement7;
+		using ::testing::NiceMock;
+		
+		NiceMock<MockSceneElement> testMockSceneElement1;
+		NiceMock<MockSceneElement> testMockSceneElement2;
+		NiceMock<MockSceneElement> testMockSceneElement3;
+		NiceMock<MockSceneElement> testMockSceneElement4;
+		NiceMock<MockSceneElement> testMockSceneElement5;
+		NiceMock<MockSceneElement> testMockSceneElement6;
+		NiceMock<MockSceneElement> testMockSceneElement7;
 
 		MockSphere3D testMockSceneElement;
 

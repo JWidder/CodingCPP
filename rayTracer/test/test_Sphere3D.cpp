@@ -3,6 +3,8 @@
 
 #include "mock_objects.h"
 
+#include "Intersection.h"
+#include "Generator.h"
 #include "Scene.h"
 #include "lightRay.h"
 

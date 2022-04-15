@@ -1,5 +1,7 @@
+#include "Util.h"
+
 #include "Scene.h"
-#include "util.h"
+
 
 /**
  * Calculate intersection

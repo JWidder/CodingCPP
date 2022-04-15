@@ -2,7 +2,34 @@
 
 #include <math.h>
 
-// #include "Dir3D.h"
+enum TypeIntersection { TOUCH, INTERSECTION, BEHIND_INTERSECTION, BEHIND_TOUCH, INNER_INTERSECTION, MISSES, START_TOUCH, START_INTERSECT };
+enum StatusIntersection { MISS, INTERSECT };
+
+enum class ColorValue {
+	GREY = (142, 142, 147),
+	RED = (255, 59, 48),
+	GREEN = (76, 217, 100),
+	PURPLE = (88, 86, 214),
+	LIGHTBLUE = (52, 170, 220),
+	BLACK = (0, 0, 0)
+};
+
+#pragma once
+
+#define VALUE_RED 0
+#define VALUE_GREEN 1
+#define VALUE_BLUE 2
+
+class Color {
+private:
+	double value[3];
+public:
+	Color() {
+		value[VALUE_RED] = 1.0;
+		value[VALUE_GREEN] = 1.0;
+		value[VALUE_BLUE] = 1.0;
+	}
+};
 
 class Dir3D
 {

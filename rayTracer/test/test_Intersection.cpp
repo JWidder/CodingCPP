@@ -1,7 +1,7 @@
 #include "gmock/gmock.h"  // Brings in gMock
 #include "gtest/gtest.h"
 
-#include "Intersection.h"
+#include "Generator.h"
 
 using namespace testing;
 

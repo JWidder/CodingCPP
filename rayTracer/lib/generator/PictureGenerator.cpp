@@ -6,9 +6,10 @@
 //#include "Scene.h"
 //#include "LightRay.h"
 
-#include "PictureGenerator.h"
+// #include "PictureGenerator.h"
+#include "Generator.h"
 
-PictureGenerator::PictureGenerator(int xLen, int yLen, Scene inScene)
+PictureGenerator::PictureGenerator(int xLen, int yLen, Scene *inScene)
 {
 	this->_xLen = xLen;
 	this->_yLen = yLen;

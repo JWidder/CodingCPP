@@ -3,9 +3,10 @@
 #include <vector>
 #include <string>
 
-#include "Scene.h"
+
 
 #include "Util.h"
+#include "Generator.h"
 
 #include "Color.h"
 #include "ColorValue.h"

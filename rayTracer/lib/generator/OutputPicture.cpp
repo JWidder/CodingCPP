@@ -1,4 +1,5 @@
-#include "OutputPicture.h"
+
+#include "Generator.h"
 
 OutputPicture::OutputPicture(std::string fileName, int xLen, int yLen)
 {
