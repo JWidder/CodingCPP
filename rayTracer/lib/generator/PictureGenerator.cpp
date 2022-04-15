@@ -17,7 +17,10 @@ PictureGenerator::PictureGenerator(int xLen, int yLen, Scene inScene)
 
 void PictureGenerator::createPicture(int bildNummer)
 {
-	OutputPicture bildAusgabe = OutputPicture(std::format("test_{}.ppm", bildNummer), _xLen,_yLen);
+	char buffer[200];
+	sprintf(buffer, "test_%1.ppm", &bildNummer);
+	// OutputPicture bildAusgabe = OutputPicture(std::format("test_{}.ppm", bildNummer), _xLen,_yLen);
+	OutputPicture bildAusgabe = OutputPicture(buffer, _xLen,_yLen);
 	for (int yCount = 0; yCount < this->_yLen; yCount++) {
 		for (int xCount = 0; xCount < this->_xLen; xCount++) {
 			Point3D *screenPoint = getScreenPoint(xCount, yCount);
