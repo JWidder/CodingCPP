@@ -112,10 +112,16 @@ public:
 
 };
 
-
 class OutputPicture {
 public:
 	OutputPicture(std::string fileName, int xLen, int yLen);
 	void writePoint(Color inColor);
 	void close();
+};
+
+class SceneTracer {
+	const Scene *dataScene;
+public:
+	SceneTracer(const Scene &inScene);
+	Color traceLightRay(LightRay inLightRay, int count);
 };
