@@ -1,11 +1,13 @@
 #pragma once
 
+#include "Util.h"
+
 #include "Point3D.h"
 #include "Dir3D.h"
 #include "lightRay.h"
 
-enum TypeIntersection { TOUCH, INTERSECTION, BEHIND_INTERSECTION, BEHIND_TOUCH, INNER_INTERSECTION, MISSES, START_TOUCH, START_INTERSECT };
-enum StatusIntersection { MISS, INTERSECT };
+enum class TypeIntersection { TOUCH, INTERSECTION, BEHIND_INTERSECTION, BEHIND_TOUCH, INNER_INTERSECTION, MISSES, START_TOUCH, START_INTERSECT };
+enum class StatusIntersection { MISS, INTERSECT };
 
 
 class Intersection {

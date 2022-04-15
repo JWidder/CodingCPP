@@ -3,7 +3,7 @@
 #include <vector>
 
 #include "Scene.h"
-// #include "LightSource.h"
+
 #include "Point3D.h"
 #include "Vector3D.h"
 #include "Color.h"
