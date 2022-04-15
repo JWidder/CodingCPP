@@ -80,3 +80,18 @@ Dir3D difference(Point3D& inV1, Point3D& inV2);
 Dir3D difference(Point3D *inV1, Point3D *inV2);
 double dot(Dir3D *a, Dir3D *b);
 Dir3D reflect(Dir3D normal, Dir3D inRay);
+
+class Vector3D {
+	Point3D basis;
+	Dir3D direction;
+
+	Vector3D(Point3D& inBasis, Dir3D& inDirection) {
+		this->basis = inBasis;
+		this->direction = inDirection;
+	};
+
+	Vector3D(Point3D startPunkt, Point3D endPoint)
+	{
+		this->basis = startPunkt;
+	};
+};

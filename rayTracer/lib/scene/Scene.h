@@ -5,13 +5,13 @@
 #include "Scene.h"
 
 #include "Util.h"
-// #include "Point3D.h"
-#include "Vector3D.h"
+
 #include "Color.h"
 #include "ColorValue.h"
 #include "lightRay.h"
 #include "Intersection.h"
 #include "math.h"
+
 
 class SceneElement
 {
@@ -21,6 +21,14 @@ public:
 	virtual bool doesIntersectRay(LightRay& inRay) = 0;
 	virtual Dir3D* getNormale() = 0;
 };
+
+class SceneFactory {
+public:
+	SceneFactory() = default;
+
+	SceneElement* createElement(const std::string& typName);
+};
+
 
 class LightSource {
 public:
