@@ -23,14 +23,6 @@ public:
 	virtual Dir3D* getNormale() = 0;
 };
 
-class SceneFactory {
-public:
-	SceneFactory() = default;
-
-	SceneElement* createElement(const std::string& typName);
-};
-
-
 class LightSource {
 public:
 	virtual ~LightSource() { return; }
