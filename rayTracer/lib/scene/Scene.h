@@ -3,11 +3,10 @@
 #include <vector>
 #include <string>
 
-#include "Util.h"
-#include "Generator.h"
-
 #include "math.h"
 
+#include "Util.h"
+#include "Generator.h"
 
 class SceneElement
 {
@@ -104,19 +103,15 @@ public:
 };
 
 
-//class SpotLight : public LightSource {
-//private:
-//	Color colorLight;
-//	Point3D posLight;
-//public:
-//	SpotLight(Color& inColorLight, Point3D& inPosLight) {
-//		this->colorLight = inColorLight;
-//		this->posLight = inPosLight;
-//	}
-//	virtual Color* getColorLight() { return &this->colorLight; }
-//	virtual Point3D* getLightPosition() { return &this->posLight; }
-//};
-
-//class Mock_SpotLight : public SpotLight {
-//	MOCK_METHOD(Color*, getColorLight, (), (override));
-//};
+class spotlight : public LightSource {
+private:
+	Color colorlight;
+	Point3D poslight;
+public:
+	spotlight(Color& incolorlight, Point3D& inposlight) {
+		this->colorlight = incolorlight;
+		this->poslight = inposlight;
+	}
+	virtual Color* getcolorlight() { return &this->colorlight; }
+	virtual Point3D* getlightposition() { return &this->poslight; }
+};
