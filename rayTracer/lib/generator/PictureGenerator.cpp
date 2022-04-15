@@ -1,8 +1,10 @@
-#include <iostream>
-#include <format>
-
-#include "Scene.h"
-#include "LightRay.h"
+//#include <format>
+//#include <iostream>
+//#include <string>
+//#include <string_view>
+//
+//#include "Scene.h"
+//#include "LightRay.h"
 
 #include "PictureGenerator.h"
 

@@ -1,7 +1,10 @@
+#pragma once
+
 #include <iostream>
 #include <string>
 #include <format>
 
+#include "scene.h"
 #include "Point3D.h"
 #include "OutputPicture.h"
 

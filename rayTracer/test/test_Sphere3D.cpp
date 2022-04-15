@@ -3,7 +3,7 @@
 
 #include "mock_objects.h"
 
-#include "Sphere3D.h"
+#include "Scene.h"
 #include "lightRay.h"
 
 namespace testing {

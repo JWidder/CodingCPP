@@ -1,7 +1,7 @@
 #include "gmock/gmock.h"  // Brings in gMock
 #include "gtest/gtest.h"
 
-#include "Sphere3D.h"
+#include "Scene.h"
 #include "lightRay.h"
 
 using namespace testing;

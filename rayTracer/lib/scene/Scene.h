@@ -2,8 +2,8 @@
 
 #include <vector>
 
-#include "SceneElement.h"
-#include "LightSource.h"
+#include "Scene.h"
+// #include "LightSource.h"
 #include "Point3D.h"
 #include "Vector3D.h"
 #include "Color.h"
@@ -11,6 +11,22 @@
 #include "lightRay.h"
 #include "Intersection.h"
 #include "math.h"
+
+class SceneElement
+{
+public:
+	virtual ~SceneElement() { ; }
+	virtual Intersection* intersectRay(LightRay& inRay) = 0;
+	virtual bool doesIntersectRay(LightRay& inRay) = 0;
+	virtual Dir3D* getNormale() = 0;
+};
+
+class LightSource {
+public:
+	virtual ~LightSource() { return; }
+	virtual Color* getColorLight() = 0;
+	virtual Point3D* getLightPosition() = 0;
+};
 
 /**
 Aufgabe:
@@ -46,14 +62,6 @@ public:
 
 };
 
-class SceneElement
-{
-public:
-	virtual ~SceneElement() { ; }
-	virtual Intersection* intersectRay(LightRay& inRay) = 0;
-	virtual bool doesIntersectRay(LightRay& inRay) = 0;
-	virtual Dir3D *getNormale() = 0;
-};
 
 class Plane3D : SceneElement
 {
@@ -98,26 +106,20 @@ public:
 	virtual Dir3D *getNormale() {return (&this->_normal);}
 };
 
-class LightSource {
-public:
-	virtual ~LightSource() { return; }
-	virtual Color *getColorLight() = 0;
-	virtual Point3D *getLightPosition() = 0;
-};
 
-class SpotLight : public LightSource {
-private:
-	Color colorLight;
-	Point3D posLight;
-public:
-	SpotLight(Color& inColorLight, Point3D& inPosLight) {
-		this->colorLight = inColorLight;
-		this->posLight = inPosLight;
-	}
-	virtual Color* getColorLight() { return &this->colorLight; }
-	virtual Point3D* getLightPosition() { return &this->posLight; }
-};
+//class SpotLight : public LightSource {
+//private:
+//	Color colorLight;
+//	Point3D posLight;
+//public:
+//	SpotLight(Color& inColorLight, Point3D& inPosLight) {
+//		this->colorLight = inColorLight;
+//		this->posLight = inPosLight;
+//	}
+//	virtual Color* getColorLight() { return &this->colorLight; }
+//	virtual Point3D* getLightPosition() { return &this->posLight; }
+//};
 
-class Mock_SpotLight : public SpotLight {
-	MOCK_METHOD(Color*, getColorLight, (), (override));
-};
+//class Mock_SpotLight : public SpotLight {
+//	MOCK_METHOD(Color*, getColorLight, (), (override));
+//};
