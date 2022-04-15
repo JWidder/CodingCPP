@@ -4,7 +4,8 @@
 
 #include "Scene.h"
 
-#include "Point3D.h"
+#include "Util.h"
+// #include "Point3D.h"
 #include "Vector3D.h"
 #include "Color.h"
 #include "ColorValue.h"

@@ -1,7 +1,5 @@
 #pragma once
 
-#include "Point3D.h"
-#include "Dir3D.h"
 #include "Util.h"
 
 class Vector3D {

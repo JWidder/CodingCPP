@@ -1,8 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "Dir3D.h"
 #include "util.h"
-
 
 namespace HelloWorldTests
 {

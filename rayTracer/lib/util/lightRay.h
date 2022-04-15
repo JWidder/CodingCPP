@@ -2,7 +2,7 @@
 
 #include "Util.h"
 // #include "Point3D.h"
-#include "Dir3D.h"
+#include "Util.h"
 #include "Color.h"
 
 class LightRay {

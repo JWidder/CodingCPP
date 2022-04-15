@@ -2,8 +2,6 @@
 
 #include "lightRay.h"
 
-#include "Dir3D.h"
-#include "Point3D.h"
 #include "util.h"
 
 TEST(test_LightRay, TestContructorPointer) {

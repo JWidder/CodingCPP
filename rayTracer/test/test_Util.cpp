@@ -1,6 +1,5 @@
 #include "gtest/gtest.h"
 
-#include "Dir3D.h"
 #include "util.h"
 
 TEST(test_Util, dot_00) {

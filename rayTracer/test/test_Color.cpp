@@ -1,6 +1,5 @@
 #include "gtest/gtest.h"
 
-#include "Dir3D.h"
 #include "util.h"
 
 TEST(Test_Color, dot_00) {

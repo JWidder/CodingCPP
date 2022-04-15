@@ -5,7 +5,6 @@
 
 #include "Scene.h"
 
-#include "Dir3D.h"
 #include "util.h"
 
 namespace testing {

@@ -2,8 +2,6 @@
 
 #include "Util.h"
 
-#include "Point3D.h"
-#include "Dir3D.h"
 #include "lightRay.h"
 
 enum class TypeIntersection { TOUCH, INTERSECTION, BEHIND_INTERSECTION, BEHIND_TOUCH, INNER_INTERSECTION, MISSES, START_TOUCH, START_INTERSECT };
