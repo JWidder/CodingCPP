@@ -12,6 +12,7 @@ PictureGenerator::PictureGenerator(int xLen, int yLen, Scene inScene)
 {
 	this->_xLen = xLen;
 	this->_yLen = yLen;
+	this->count = 0;
 	return;
 }
 

@@ -15,20 +15,18 @@ class PictureGenerator
 {
 	int _xLen;
 	int _yLen;
-	int count;
+	int count = 0;
 
 	long deltaCamera = 2;
 
 	double screenLen = 5.0;
 
-	double screenBase_x;
-	double screenBase_y;
+	double screenBase_x=0.0;
+	double screenBase_y=0.0;
 
-	double deltaScreen;
+	double deltaScreen = 0.0;
 
 	Point3D positionCamera;
-	// SceneTracer sceneTracer;
-
 
 
 public:
