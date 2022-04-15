@@ -2,7 +2,6 @@
 
 #include "Scene.h"
 
-
 /**
  * Calculate intersection
  *

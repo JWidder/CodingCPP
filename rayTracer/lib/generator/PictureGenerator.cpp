@@ -1,12 +1,3 @@
-//#include <format>
-//#include <iostream>
-//#include <string>
-//#include <string_view>
-//
-//#include "Scene.h"
-//#include "LightRay.h"
-
-// #include "PictureGenerator.h"
 #include "Generator.h"
 
 PictureGenerator::PictureGenerator(int xLen, int yLen, Scene *inScene)

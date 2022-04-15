@@ -3,15 +3,9 @@
 #include <vector>
 #include <string>
 
-
-
 #include "Util.h"
 #include "Generator.h"
 
-#include "Color.h"
-#include "ColorValue.h"
-#include "lightRay.h"
-#include "Intersection.h"
 #include "math.h"
 
 

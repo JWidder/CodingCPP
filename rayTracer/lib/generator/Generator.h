@@ -4,11 +4,7 @@
 #include <string>
 #include <format>
 
-#include "Color.h"
 #include "Util.h"
-// #include "Scene.h"
-// #include "OutputPicture.h"
-
 
 class LightRay {
 private:

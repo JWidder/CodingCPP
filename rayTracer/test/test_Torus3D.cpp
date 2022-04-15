@@ -2,7 +2,6 @@
 #include "gtest/gtest.h"
 
 #include "Scene.h"
-#include "lightRay.h"
 
 using namespace testing;
 
