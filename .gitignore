@@ -34,3 +34,7 @@ build
 Debug
 .vs
 *.json
+/07_ray_tracer_cpp/lib/googletest
+/07_ray_tracer_cpp/test/*.bak
+/08_data_transfer/lib/googletest
+/09_MoveData/lib/googletest

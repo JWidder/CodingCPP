@@ -1,1 +1,0 @@
-add_library(util_lib STATIC ${LIB_SOURCES})
