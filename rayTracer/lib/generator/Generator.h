@@ -23,6 +23,7 @@ public:
 	LightRay(Point3D& basis, Dir3D& direction);
 	Point3D* getStartPoint();
 	Dir3D* getDirection();
+	Point3D* getIntersectionPoint();
 };
 
 class Intersection {
@@ -41,33 +42,17 @@ private:
 	StatusIntersection statusIntersection;
 
 public:
-	Intersection(LightRay *inRay) 
-	{ 
-		this->inRay = inRay;
-		outRay = nullptr;
-		parameter = 0.0;
-		typeInersection = TypeIntersection::MISSES;
-		statusIntersection = StatusIntersection::MISS;
-		return; 
-	}
-	// Own constructor
+	Intersection(LightRay* inRay);
     Intersection() = default; // C++11 default constructor creation
 
-	void setParameter(double inParameter) {this->parameter = inParameter;};
-	double getParameter() { return this->parameter; }
+	void setParameter(double inParameter);
+	double getParameter();
 
-	void setInRay(LightRay *_inRay) {
-		this->inRay = _inRay;
-	}
+	void setInRay(LightRay* _inRay);
+	void setClassification(TypeIntersection inTypeIntersection, StatusIntersection inStatusIntersection);
 
-	void setClassification(TypeIntersection inTypeIntersection,StatusIntersection inStatusIntersection)
-	{
-		this->typeInersection = inTypeIntersection;
-		this->statusIntersection = inStatusIntersection;
-	}
-
-	StatusIntersection getStatusIntersection() { return this->statusIntersection; }
-	TypeIntersection getTypeIntersection() { return this->typeInersection; }
+	StatusIntersection getStatusIntersection();
+	TypeIntersection getTypeIntersection();
 };
 
 class Scene;
@@ -124,4 +109,6 @@ class SceneTracer {
 public:
 	SceneTracer(const Scene &inScene);
 	Color traceLightRay(LightRay inLightRay, int count);
+	LightRay getNextRay(LightRay lightRay, Intersection nextIntersection);
+	Intersection intersectRay(LightRay ray);
 };

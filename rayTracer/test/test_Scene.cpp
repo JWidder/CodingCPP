@@ -3,9 +3,9 @@
 
 #include "mock_objects.h"
 
+#include "util.h"
 #include "Scene.h"
 
-#include "util.h"
 
 namespace testing {
 	TEST(test_Scene, TEST_MOCK) {

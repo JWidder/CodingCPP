@@ -2,8 +2,8 @@
 
 #include <math.h>
 
-enum TypeIntersection { TOUCH, INTERSECTION, BEHIND_INTERSECTION, BEHIND_TOUCH, INNER_INTERSECTION, MISSES, START_TOUCH, START_INTERSECT };
-enum StatusIntersection { MISS, INTERSECT };
+enum class TypeIntersection { TOUCH, INTERSECTION, BEHIND_INTERSECTION, BEHIND_TOUCH, INNER_INTERSECTION, MISSES, START_TOUCH, START_INTERSECT };
+enum class StatusIntersection { MISS, INTERSECT };
 
 enum class ColorValue {
 	GREY = (142, 142, 147),
