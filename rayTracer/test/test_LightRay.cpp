@@ -4,6 +4,8 @@
 
 #include "util.h"
 
+using namespace generator;
+
 TEST(test_LightRay, TestContructorPointer) {
 	Point3D *startPoint = new Point3D(10.0, 11.0, 12.0);
 	Dir3D *testDir = new Dir3D(1.0, 2.0, 3.0);

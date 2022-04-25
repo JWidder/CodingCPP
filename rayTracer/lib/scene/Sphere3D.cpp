@@ -2,6 +2,8 @@
 
 #include "Scene.h"
 
+using namespace generator;
+
 /**
  * Calculate intersection
  *

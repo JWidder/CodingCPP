@@ -6,6 +6,7 @@
 #include "util.h"
 #include "Scene.h"
 
+using namespace generator;
 
 namespace testing {
 	TEST(test_Scene, TEST_MOCK) {

@@ -1,16 +1,19 @@
 
 #include "Generator.h"
 
-OutputPicture::OutputPicture(std::string fileName, int xLen, int yLen)
-{
-	return;
-}
+namespace generator {
 
-void OutputPicture::writePoint(Color inColor)
-{
-	return;
-}
+	OutputPicture::OutputPicture(std::string fileName, int xLen, int yLen)
+	{
+		return;
+	}
 
-void OutputPicture::close()
-{
+	void OutputPicture::writePoint(Color inColor)
+	{
+		return;
+	}
+
+	void OutputPicture::close()
+	{
+	}
 }

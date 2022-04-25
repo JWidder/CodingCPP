@@ -4,6 +4,7 @@
 #include "Generator.h"
 
 using namespace testing;
+using namespace generator;
 
 TEST(Test_Intersection, Test_IntersectRay_Misses) {
 	Point3D testBasis = Point3D();

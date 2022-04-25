@@ -12,8 +12,8 @@ class SceneElement
 {
 public:
 	virtual ~SceneElement() { ; }
-	virtual Intersection* intersectRay(LightRay& inRay) = 0;
-	virtual bool doesIntersectRay(LightRay& inRay) = 0;
+	virtual generator::Intersection* intersectRay(generator::LightRay& inRay) = 0;
+	virtual bool doesIntersectRay(generator::LightRay& inRay) = 0;
 	virtual Dir3D* getNormale() = 0;
 };
 
@@ -92,9 +92,9 @@ public:
 
 	virtual ~Sphere3D() { ; }
 
-	virtual Intersection *intersectRay(LightRay &inRay);
+	virtual generator::Intersection *intersectRay(generator::LightRay &inRay);
 
-	virtual bool doesIntersectRay(LightRay& inRay) {
+	virtual bool doesIntersectRay(generator::LightRay& inRay) {
 		// MISSES Sphere 3D doesIntersectRay ausprogrammieren
 		return false;
 	}

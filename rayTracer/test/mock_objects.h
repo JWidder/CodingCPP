@@ -5,6 +5,8 @@
 #include "Generator.h"
 #include "Scene.h"
 
+using namespace generator;
+
 class MockSphere3D : public Sphere3D {
 public:
 	MOCK_METHOD (Intersection *, intersectRay, (LightRay& inRay), (override));

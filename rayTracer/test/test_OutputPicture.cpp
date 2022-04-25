@@ -1,6 +1,10 @@
 #include "gtest/gtest.h"
 
+
 #include "util.h"
+#include "Generator.h"
+
+using namespace generator;
 
 TEST(test_OutputPicture, dot_00) {
 	Dir3D in1 = Dir3D(1.0, 0.0, 0.0);
